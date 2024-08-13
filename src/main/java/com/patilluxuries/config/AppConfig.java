@@ -30,9 +30,8 @@ public class AppConfig {
 			@Override
 			public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
 				CorsConfiguration cfg=new CorsConfiguration();
-				cfg.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
+				cfg.setAllowedOrigins(Arrays.asList("http://localhost:3000","https://patilluxuries-ecommerce.vercel.app"));
 				cfg.setAllowedMethods(Collections.singletonList("*"));
-				
 				cfg.setAllowedHeaders(Collections.singletonList("*"));
 				cfg.setExposedHeaders(Arrays.asList("Authorization"));
 				cfg.setMaxAge(3600L);
